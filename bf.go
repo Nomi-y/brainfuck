@@ -30,7 +30,7 @@ func main() {
 	case "run":
 		run(code)
 	case "live":
-
+		// TODO
 	default:
 		fmt.Println("Invalid verb:", verb)
 		os.Exit(1)
@@ -50,7 +50,7 @@ func filterCode(code []byte) []byte {
 
 func run(code []byte) {
 	code = filterCode(code)
-	cells = make([]byte, 3000000)
+	cells = make([]byte, 30000)
 	// ap:	Array Pointer
 	//		Position in the array
 	// ip:	Instruction Pointer
