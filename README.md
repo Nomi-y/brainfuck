@@ -23,7 +23,11 @@ go build -o bf
 Run a brainfuck program with one of these commands:
 ```sh
 ./bf run program.bf
+```
+```sh
 ./bf run program.b
+```
+```sh
 ./bf "+[-->-[>>+>-----<<]<--<---]>-.>>>+."
 ```
 
