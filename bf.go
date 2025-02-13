@@ -17,7 +17,7 @@ func main() {
 	verb := args[0]
 	input := args[1]
 	var code []byte
-	if info, err := os.Stat(input); err == nil && !info.IsDir() && filepath.Ext(input) == ".b" {
+	if info, err := os.Stat(input); err == nil && !info.IsDir() && (filepath.Ext(input) == ".b" || filepath.Ext(input) == ".bf") {
 		data, err := os.ReadFile(input)
 		if err != nil {
 			panic(err)
